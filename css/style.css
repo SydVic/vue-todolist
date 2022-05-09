@@ -6,10 +6,27 @@
 }
 
 /* COMMON */
+.container {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
 .job-done {
     text-decoration: line-through;
 }
 
+.remove-job {
+    color: #ff0000;
+    font-weight: 900;
+    cursor: pointer;
+}
+
 ul.to-do-list {
     list-style: none;
+}
+
+ul.to-do-list li {
+    display: flex;
+    justify-content: space-between;
 }

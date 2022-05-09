@@ -22,7 +22,9 @@ const app = new Vue (
             ],
         },
         methods: {
-
+            removeJob: function(index) {
+                this.toDoList.splice(index, 1);
+            }
         },
     }
 );

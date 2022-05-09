@@ -16,13 +16,19 @@
     <!-- contenitore di Vue JS  -->
     <div id="root">
 
-        <ul class="to-do-list">
-            <li 
-            v-for="item in toDoList"
-            :class="item.done ? 'job-done' : ''">
-                {{item.text}}
-            </li>
-        </ul>
+        <div class="container">
+
+            <ul class="to-do-list">
+                <li 
+                v-for="(item, index) in toDoList">
+                    <p :class="item.done ? 'job-done' : ''">{{item.text}}</p>
+                    <span 
+                    class="remove-job"
+                    @click="removeJob(index)">X</span>
+                </li>
+            </ul>
+            
+        </div>
 
     </div>
 
