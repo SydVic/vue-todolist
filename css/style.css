@@ -22,15 +22,30 @@
     cursor: pointer;
 }
 
+/* HEADER */
+.header-title {
+    margin: 1.5rem 0;
+}
+
+.newJob {
+    padding: .5rem 1rem;
+    border: 1px solid grey;
+    border-radius: .3rem;
+}
+
 /* MAIN */
 ul.to-do-list {
     list-style: none;
+    margin-top: 1.5rem;
 }
 
 ul.to-do-list li {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    margin: .3rem 0 .5rem 0;
+    padding: 0 0 .2rem .5rem;
+    border-bottom: 1px solid grey;
 }
 
 ul.to-do-list li p {
