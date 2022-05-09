@@ -22,6 +22,7 @@
     cursor: pointer;
 }
 
+/* MAIN */
 ul.to-do-list {
     list-style: none;
 }

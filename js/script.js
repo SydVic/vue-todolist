@@ -20,6 +20,8 @@ const app = new Vue (
                     done: false,
                 },
             ],
+            newJob: '',
+            newDone: false,
         },
         methods: {
             jobDone: function(index) {
@@ -29,6 +31,13 @@ const app = new Vue (
             removeJob: function(index) {
                 this.toDoList.splice(index, 1);
             },
+            // raccogliendo i dati dall'input crea nuovo oggetto nell'array
+            addNewJob: function() {
+                const newToDoJob = Object.create(this.toDoList);
+                newToDoJob.text = this.newJob;
+                newToDoJob.done = this.newDone;
+                this.toDoList.push(newToDoJob);
+            }
         },
     }
 );
