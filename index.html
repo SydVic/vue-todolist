@@ -21,7 +21,7 @@
             <!-- HEADER -->
             <header>
 
-                <input type="text" placeholder="nuovo ToDo" v-model="newJob">
+                <input type="text" placeholder="nuovo ToDo" v-model="newJob" @keyup.enter="addNewJob">
                 <button @click="addNewJob">Aggiungi</button>
 
             </header>
