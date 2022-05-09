@@ -18,16 +18,34 @@
 
         <div class="container">
 
-            <ul class="to-do-list">
-                <li 
-                v-for="(item, index) in toDoList">
-                    <p :class="item.done ? 'job-done' : ''">{{item.text}}</p>
-                    <span 
-                    class="remove-job"
-                    @click="removeJob(index)">X</span>
-                </li>
-            </ul>
-            
+            <!-- HEADER -->
+            <header>
+
+            </header>
+            <!-- /HEADER -->
+
+            <!-- MAIN -->
+            <main>
+
+                <!-- LISTA DEI LAVORI DA FARE -->
+                <ul class="to-do-list">
+                    <li 
+                    v-for="(item, index) in toDoList">
+                        <p 
+                        :class="item.done ? 'job-done' : ''"
+                        @click="jobDone(index)">
+                            {{item.text}}
+                        </p>
+                        <span 
+                        class="remove-job"
+                        @click="removeJob(index)">X</span>
+                    </li>
+                </ul>
+                <!-- /LISTA DEI LAVORI DA FARE -->
+                
+            </main>
+            <!-- /MAIN -->
+
         </div>
 
     </div>

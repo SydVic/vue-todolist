@@ -29,4 +29,10 @@ ul.to-do-list {
 ul.to-do-list li {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+ul.to-do-list li p {
+    display: flex;
+    flex-grow: 1;
 }

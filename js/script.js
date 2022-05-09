@@ -22,9 +22,13 @@ const app = new Vue (
             ],
         },
         methods: {
+            jobDone: function(index) {
+                this.toDoList[index].done = !this.toDoList[index].done;
+            },
+            // clicclando sulla X in html rimuove l'elemento dall'array
             removeJob: function(index) {
                 this.toDoList.splice(index, 1);
-            }
+            },
         },
     }
 );
