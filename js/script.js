@@ -13,7 +13,7 @@ const app = new Vue (
                 },
                 {
                     text: "ritirare macchina dal meccanico",
-                    done: false,
+                    done: true,
                 },
                 {
                     text: "controllare asta ebay",
