@@ -33,11 +33,19 @@ const app = new Vue (
             },
             // raccogliendo i dati dall'input crea nuovo oggetto nell'array
             addNewJob: function() {
-                const newToDoJob = Object.create(this.toDoList);
-                newToDoJob.text = this.newJob;
-                newToDoJob.done = this.newDone;
-                this.toDoList.push(newToDoJob);
-            }
+                // const newToDoJob = Object.create(this.toDoList);
+                // newToDoJob.text = this.newJob;
+                // newToDoJob.done = this.newDone;
+                // this.toDoList.push(newToDoJob);
+
+                // Object correzione
+                const newObject = {
+                    text: this.newJob,
+                    done: false,
+                }
+                this.toDoList.push(newObject);
+                this.newJob = '';
+            },
         },
     }
 );
